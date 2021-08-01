@@ -4,8 +4,11 @@ A Java based compilation unit with the goal of making an output Jar which can re
 Essentially functions as the following:
 
 ACTION: RamaRunner is invoked (by double-click or java command)
+
 RESPONSE: RamaRunner inflates <jarRunnerIsInside.jar>!runner/ file to java.home/RamaRunner/
+
 CONDITIONAL: if inflated file contains a RamaRunner instance
+
 RESPONSE:
   - the "baton" (responsibility) of inflating is passed to the Inner RamaRunner recursively (continue until no RamaRunner instance exists)
   - Runner inflates java.home/RamaRunner/dependencies/<jarRunnerIsInside.jar>!runner/ to java.home/RamaRunner
